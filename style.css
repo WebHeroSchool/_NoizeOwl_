@@ -1,3 +1,9 @@
-.title{
+.menu__item{
+      font-family: 'Roboto', sans-serif;
+}
+.main-content__subtitle{
+      font-family: 'Roboto', sans-serif;
+}
+.main-content__button{
       font-family: 'Roboto', sans-serif;
 }
