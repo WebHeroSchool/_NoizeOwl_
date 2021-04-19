@@ -1,6 +1,10 @@
+.body {
+  margin: 0;
+}
+
 .wrapper {
   margin: auto;
-  width: 80%;
+  width: 68%;
 }
 
 .header {
@@ -18,7 +22,7 @@
 
 .logo__circle {
   position: absolute;
-  left: 0;
+  left: 0px;
   top: 50%;
   transform: translateY(-50%);
   width: 28px;
@@ -43,12 +47,12 @@
 
 .menu {
   display: flex;
-  align-items: center;
+  margin-top: 52px;
 }
 
 .menu__item {
   position: relative;
-  margin-right: 26px;
+  margin-right: 27px;
   font: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
   color: #000;
   text-decoration: none;
@@ -65,10 +69,9 @@
   display: block;
   content: '';
   width: 0;
-  height: 3px;
+  height: 2px;
   background: #0056EC;
-  margin-right: 26px;
-  opacity: 0;
+
   transition: opacity .5s, width .5s;
 }
 
@@ -82,13 +85,14 @@
 }
 
 .main {
-  padding: 0 63% 100px 0;
-  background: top right no-repeat url(img/mainlmg.svg);
+  padding: 0 68% 100px 0;
+  background: top -17px right no-repeat url(img/mainlmg.svg);
 }
 
 .main__title {
-  margin-bottom: 0 0 40px 0;
+  margin: 0 0 40px 0;
   font: 700 50px/66px 'pt_serif', arial, helvetica, sans-serif;
+  width: 434px;
 }
 
 .main__title-text_highlight {
@@ -96,16 +100,18 @@
 }
 
 .main__subtitle {
-  margin-bottom: 0 0 41px 0;
-  font: 400 18px/21px 'Roboto', arial, helvetica, sans-serif;
+  margin: 0 0 41px 0;
+  font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
+  width: 367px;
 }
 
 .main__button {
   display: inline-block;
+  margin: 0;
   font: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
   color: #fff;
   background: #0056EC;
-  padding: 14px 16px;
+  padding: 14px 25px 13px 16px;
   text-decoration: none;
   border-radius: 4px;
   transition: opacity .5s;
@@ -113,4 +119,48 @@
 
 .main__button:hover {
   opacity: .5;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    background: no-repeat;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .header {
+    margin-bottom: 28px;
+  }
+
+  .main {
+    text-align: center;
+    padding: 74% 0 0;
+    background-size: 74%;
+    background-position: top center;
+  }
+  .main__title {
+    margin-bottom: 0 0 44px 0;
+    font: 700 30px/39px 'pt_serif', arial, helvetica, sans-serif;
+  }
+
+  .main__title-text_highlight {
+    background: #ECF3FF;
+  }
+
+  .main__subtitle {
+    margin-bottom: 0 0 25px 0;
+    font: 400 16px/19px 'Roboto', arial, helvetica, sans-serif;
+  }
+
+  .main__button {
+    font: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
+    color: #fff;
+    background: #0056EC;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: opacity .5s;
+  }
 }
